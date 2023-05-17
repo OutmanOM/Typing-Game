@@ -1,0 +1,63 @@
+/* Body styles */
+body {
+    background-color: #F8F8F8;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  #main_title {
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #051b7c;
+    margin-top: 20px;
+  }
+  
+  /* Welcome message styles */
+  #text-welcome {
+    font-size: 1.2em;
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Quote display styles */
+  #quote {
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  /* Input box styles */
+  #typed_value {
+    font-size: 1.2em;
+    border: 2px solid #333;
+    padding: 10px;
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 6px;
+  }
+  
+  /* Start button styles */
+  #start_button {
+    background-color: #333;
+    position: relative;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 6px;
+  }
+  
+  /* Status message styles */
+  #message {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

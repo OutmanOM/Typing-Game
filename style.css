@@ -31,18 +31,35 @@ body {
   }
   
   /* Input box styles */
-  #typed_value {
-    font-size: 1.2em;
-    border: 2px solid #333;
-    padding: 10px;
-    margin-top: 30px;
-    width: 300px;
-    border-radius: 6px;
+  @keyframes neonAnimation {
+    0% {
+      box-shadow: 0 0 5px #0654e4;
+    }
+    50% {
+      box-shadow: 0 0 15px #0c55b4, 0 0 20px #41cf94, 0 0 30px #c628ee, 0 0 30px #041ca3, 0 0 30 px #e91bcd;
+    }
+    100% {
+      box-shadow: 0 0 5px #0654e4;
+    }
   }
   
+  
+  #typed_value {
+    font-size: 1.2em;
+    border: 2px solid #0654e4;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 21em;
+    width: 450px;
+    border-radius: 6px;
+    animation: neonAnimation 1s infinite;
+  }
+  
+  
   /* Start button styles */
+  
   #start_button {
-    background-color: #333;
+    background-color: #31eb03;
     position: relative;
     color: #FFF;
     border: none;
@@ -52,7 +69,41 @@ body {
     cursor: pointer;
     margin-top: 30px;
     border-radius: 6px;
+    transition: 0,3s;
+    animation: neonAnimation 1s infinite;
   }
+  @keyframes neonAnimation {
+    0% {
+      box-shadow: 0 0 5px #0670ad;
+    }
+    50% {
+      box-shadow: 0 0 20px #ff00f2, 0 0 20spx #b907b9, 0 0 40px #0a06ca, 0 0 60px #48035e, 0 0 80px #0400ff;
+    }
+    100% {
+      box-shadow: 0 0 5px #2e03eb;
+    }
+  }
+  #start_button:hover {
+    background-color: #69da0d;
+  }
+  
+  #start_button:active {
+    animation: clickAnimation 0.3s;
+  }
+  
+  @keyframes clickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
   
   /* Status message styles */
   #message {
